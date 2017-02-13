@@ -44,9 +44,9 @@ method: changeInScore(announce current score when changed)
 
 
 #Incremental steps
--Build a question that takes an answer/output the answer
--Modify question to have if statements to check if true
--Modidy question to generate random numbers/store them as the answer
+-Build a question that takes an answer/output the answer GOOD
+-Modify question to have if statements to check if true GOOD
+-Modify question to generate random numbers/store them as the answer
 
 -Create a score of 3/have one player
 -Adjust turn if answer is wrong
