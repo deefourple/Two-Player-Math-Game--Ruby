@@ -19,10 +19,12 @@
 #GAME SHOULD ANNOUNCE WHO WON
 
 CLASSES
+turn -
+state: question
+method: questionGenerator
 game -
-state: turn, gameOnOrOver
+state: gameOnOrOver, players
 behavior: changeTurn, checkScore, winnerGagnat,
-method: changeTurn(change state between both players)
 method: checkScore(if a score hits 0, game over)
 method: puts ---- NEW TURN ----
 method: winner(annonce winner and their current score)
@@ -39,3 +41,26 @@ behavior: changeScore(-1), playerConstructor, changeInScore
 method: changeScore(subtract 1 off of player\'s score if question does not match the answer)
 method: playerConstructor(create a player that holds a score state(3))
 method: changeInScore(announce current score when changed)
+
+
+#Incremental steps
+-Build a question that takes an answer/output the answer
+-Modify question to have if statements to check if true
+-Modidy question to generate random numbers/store them as the answer
+
+-Create a score of 3/have one player
+-Adjust turn if answer is wrong
+-Do something once score hits 0
+
+-puts ---- NEW TURN ---- on every questions
+-create player playerConstructor
+-switch between players each question
+-adjust score accordingly
+
+-Match all instances together
+-Have a file for each class
+-Define a main.rb that requies all other files
+-Define a constant MathGame
+
+-TEST CONTINOUSLY UNTIL PERFECTION
+
