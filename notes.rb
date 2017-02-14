@@ -26,7 +26,6 @@ game -
 state: gameOnOrOver, players
 behavior: changeTurn, checkScore, winnerGagnat,
 method: checkScore(if a score hits 0, game over)
-method: puts ---- NEW TURN ----
 method: winner(annonce winner and their current score)
 
 question -
@@ -40,7 +39,7 @@ state: individualScore(3)
 behavior: changeScore(-1), playerConstructor, changeInScore
 method: changeScore(subtract 1 off of player\'s score if question does not match the answer)
 method: playerConstructor(create a player that holds a score state(3))
-method: changeInScore(announce current score when changed)
+
 
 
 #Incremental steps
