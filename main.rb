@@ -7,6 +7,9 @@ player1 = MathGame::Player.new
 player2 = MathGame::Player.new
 question = MathGame::Question.new
 
-puts player1.player1_score
-puts player2.player2_score
-question.question_generator
+player1.score
+unless question.question_generator
+  puts "Your current score is #{player1.change_score}/3"
+end
+# question.check_score
+# question.question_generator

@@ -1,15 +1,5 @@
-
 module MathGame
   class Question
-
-    def answer_checker
-      if answer == computer_answer && score > 0
-        puts "Correct-a-mundo! Your current score is #{score}"
-    end
-
-    def output_message
-
-    end
 
     def question_generator
       r = Random.new
@@ -19,6 +9,14 @@ module MathGame
       question = "What is #{number_1} + #{number_2}?"
       puts "---- NEW TURN ----"
       puts question
+      answer = gets.chomp.to_i
+      if answer == computer_answer
+        puts "Correct-a-mundo! Your current score is fantastic"
+        return true
+      else
+        puts "Wrong answer."
+        return false
+    end
     end
   end
 end

@@ -1,16 +1,13 @@
-
 module MathGame
-class Player
-  def player1_score
-    1score = 3
-  end
+  class Player
+    attr_accessor :score
 
-  def player2_score
-    2score = 3
-  end
+    def initialize
+      @score = 3
+    end
 
-  def change_score
-    score -= 1
+    def change_score
+      @score -= 1
     end
   end
 end
